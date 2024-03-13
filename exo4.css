@@ -1,0 +1,32 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.form-container,
+.table-container {
+  border: solid 1px black;
+  padding: .5rem;
+}
+
+.field {
+  margin-block: 1rem;
+}
+
+.table-container {
+  min-width: 50vw;
+}

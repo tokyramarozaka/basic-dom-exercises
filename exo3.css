@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+img {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  animation: rotate 3000ms infinite linear;
+  display: none;
+}
+
+.field {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+#result {
+  display: none;
+}
+
+/* Animation pour tourner l'image avec un effet d'apparition / disparition */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}

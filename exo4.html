@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4 : to-do list</title>
+    <link rel="stylesheet" href="exo4.css">
+    <script src="exo4.js" defer></script>
+  </head>
+  <body>
+    <!-- Je préfère ajouter des ID mais vous êtes pas obligés -->
+    <h1>Je vous laisse styliser la page.</h1>
+    <div class="container">
+      <div class="form-container">
+        <form action="">
+          <div class="field">
+            <label for="title">Title : </label>
+            <input type="text" id="title">
+          </div>
+          <div class="field">
+            <label for="Description">Description : </label>
+            <input type="text" id="description">
+          </div>
+          <div class="buttons">
+            <input type="button" value="Add" id="addButton">
+          </div>
+        </form>
+      </div>
+      <div class="table-container">
+        <table id="to-do-list">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
