@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-area {
+  width: 50vw;
+  height: 30vh;
+  position: relative;
+  border: solid 5px grey;
+  margin-inline: auto;
+}
+
+.dinosaur,
+.cactus {
+  position: absolute;
+  bottom: 0;
+}
+
+.dinosaur {
+  height: 5vh;
+  width: 2vw;
+  left: 0;
+  background-color: red;
+}
+
+.cactus {
+  height: 3vh;
+  width: 2vw;
+  right: 0;
+  background-color: green;
+  animation: move 3s infinite linear;
+}
+
+.isJumping {
+  animation: jump .5s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 5vh;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: calc(100% - 2vw);
+  }
+}
